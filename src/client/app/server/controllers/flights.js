@@ -26,7 +26,8 @@ module.exports = {
 
   retrieve(req, res) {
     return flights
-    .findById(req.params.flightId, {
+    .findOne({
+      where : {name : req.params.flightName}
     })
     .then(flights => {
       if (!flights) {
