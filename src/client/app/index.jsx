@@ -77,6 +77,7 @@ var SimpleMap = React.createClass({
   render() {
     return (
       <GoogleMapReact
+        key="AIzaSyDnxUEK6mpMmDgMT1zWAAAAKppZmscTKiU"
         defaultCenter={this.props.center}
         defaultZoom={this.props.zoom}
       >
