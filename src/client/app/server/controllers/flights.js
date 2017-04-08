@@ -38,6 +38,7 @@ module.exports = {
     })
     .catch(error => res.status(400).send(error));
   },
+
   update(req, res) {
     return flights
     .findById(req.params.flightId, {
@@ -50,10 +51,10 @@ module.exports = {
       }
       return flights
       .update({
-        name: req.body.title || flights.title,
+        name: req.body.name || flights.name,
         departure: req.body.departure || flights.departure,
         arrival: req.body.arrival || flights.arrival,
-        eta: req.body.eta || flights.eta, 
+        eta: req.body.eta || flights.eta,
       })
       .then(() => res.status(200).send(flights))  // Send back the updated flights.
       .catch((error) => res.status(400).send(error));
