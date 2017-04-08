@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "internship",
+    "password": "dwaipayan_26",
+    "database": "flights",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "internship",
+    "password": "dwaipayan_26",
+    "database": "flights",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "internship",
+    "password": "dwaipayan_26",
+    "database": "flights",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
