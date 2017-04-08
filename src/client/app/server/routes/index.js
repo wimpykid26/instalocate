@@ -1,6 +1,6 @@
 const flightsController = require('../controllers').flights;
 
-module.exports = (app) => {
+module.exports = function(app){
   app.get('/api', (req, res) => res.status(200).send({
     message: 'Welcome to the flights API!',
   }));
